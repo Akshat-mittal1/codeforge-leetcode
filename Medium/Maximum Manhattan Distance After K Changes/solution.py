@@ -1,5 +1,5 @@
 # 🔍 Problem: 3443. Maximum Manhattan Distance After K Changes
-# 📅 Date: 20-06-2025
+# 📅 Date: 20-JUNE-2025
 # 🌐 Link: https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/
 # 🧠 Approach: Greedy with direction counters + formula (MD + min(2*k, steps - MD))
 # 🕐 Time Complexity: O(n)
