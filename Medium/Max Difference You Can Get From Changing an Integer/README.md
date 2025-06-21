@@ -53,4 +53,4 @@ Output: 8700
 
 ## 🧑‍💻 Author
 
-Leetcode-style greedy implementation by Akshat Mittal
+Leetcode-style greedy implementation by Akshat Mittal.
