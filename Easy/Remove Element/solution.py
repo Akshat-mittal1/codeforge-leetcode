@@ -31,4 +31,4 @@ if __name__ == "__main__":
     val = 3
     k = sol.removeElement(nums, val)
     print("New length:", k)           # Output: 2
-    print("Modified nums:", nums)     # Output: [2, 2, '_', '_']
+    print("Modified nums:", nums)     # Output: [2, 2, '_', '_'].
