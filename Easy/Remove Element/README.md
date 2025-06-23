@@ -2,7 +2,7 @@
 
 | Item | Value |
 |------|-------|
-| **Solved on** | 12‑06‑2025 |
+| **Solved on** | 12‑JUNE‑2025 |
 | **Category** | Easy |
 | **Topic Tags** | Array, Two Pointers |
 | **Problem Link** | [Remove Element](https://leetcode.com/problems/remove-element/) |
