@@ -1,7 +1,7 @@
 # 🔍 K-Mirror Numbers
 
 **LeetCode Link:** [K-Mirror Numbers](https://leetcode.com/problems/k-mirror-numbers/)  
-**Date:** 2025-06-23  
+**Date:** 23-JUNE-2025 
 **Author:** Akshat Mittal  
 
 ---
