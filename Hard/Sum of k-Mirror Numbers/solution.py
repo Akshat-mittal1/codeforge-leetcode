@@ -1,5 +1,5 @@
 # 🔍 Problem: K-Mirror Numbers
-# 📅 Date: 2025-06-23
+# 📅 Date: 2025-JUNE-23
 # 🔗 Link: https://leetcode.com/problems/k-mirror-numbers/
 # ✅ Category: Math, Palindromes, Base Conversion
 # 👨‍💻 Author: Akshat Mittal
