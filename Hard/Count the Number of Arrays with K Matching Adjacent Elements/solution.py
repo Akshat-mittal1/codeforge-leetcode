@@ -1,5 +1,5 @@
 # 🔍 Problem: Count Good Arrays
-# 📅 Date: 2025-06-24
+# 📅 Date: 17-JUNE-2025
 # ❓ Description:
 #   Given integers n, m, and k, count the number of arrays of length `n` using integers from `1` to `m`
 #   such that exactly `k` indices have values that are *greater than the previous index*.
