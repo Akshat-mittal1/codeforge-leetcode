@@ -1,6 +1,6 @@
 ```markdown
 # 🔍 Problem: Find All K-Distant Indices in an Array
-📅 Date: 2025-06-24  
+📅 Date: 24-JUNE-2025
 🔗 Link: [LeetCode Problem](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/)  
 🗂️ Category: Array, Two Pointers
 
