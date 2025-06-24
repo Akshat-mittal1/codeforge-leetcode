@@ -1,7 +1,7 @@
 ```markdown
 # 🔍 Problem: Count Good Arrays
 
-📅 Date: 2025-06-24  
+📅 Date: 17-JUNE-2025
 🔗 Link: *(insert platform link if available)*  
 🗂️ Category: Combinatorics, Modular Arithmetic, Exponentiation
 
