@@ -1,5 +1,5 @@
 # Title: Maximum Difference Between Counts of Two Digits in a Sliding Window
-# Date: 2025-06-26
+# Date: 11-JUNE-2025
 # Approach: Prefix sum tracking, custom encoding of parity, sliding window optimization
 # Time Complexity: O(25 * n), where 25 is for digit pairs (0–4) and n is length of sequence
 # Space Complexity: O(n)
