@@ -1,5 +1,5 @@
 # Title: K-th Smallest Product of Two Sorted Arrays
-# Date: 2025-06-26
+# Date: 25-JUNE-2025
 # Link: https://leetcode.com/problems/k-th-smallest-product-of-two-sorted-arrays/
 # Approach: Binary Search on Answer
 # Time Complexity: O((m + n) * log(range))
