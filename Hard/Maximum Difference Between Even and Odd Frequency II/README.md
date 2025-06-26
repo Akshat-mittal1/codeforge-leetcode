@@ -1,6 +1,6 @@
 # Maximum Difference Between Counts of Two Digits in a Sliding Window
 
-**Date:** 2025-06-26  
+**Date:** 11-JUNE-2025
 **Category:** Sliding Window, Prefix Sum, Digit Frequency
 
 ---
