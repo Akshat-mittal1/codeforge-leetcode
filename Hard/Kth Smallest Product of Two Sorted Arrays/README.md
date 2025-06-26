@@ -1,6 +1,6 @@
 # K-th Smallest Product of Two Sorted Arrays
 
-**Date:** 2025-06-26  
+**Date:** 25-JUNE-2025
 **Link:** [LeetCode](https://leetcode.com/problems/k-th-smallest-product-of-two-sorted-arrays/)  
 **Category:** Binary Search on Answer
 
