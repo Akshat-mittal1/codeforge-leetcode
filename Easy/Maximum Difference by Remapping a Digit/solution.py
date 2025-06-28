@@ -1,5 +1,5 @@
 # Title: Maximum Difference by Remapping a Digit
-# Date: 2025-06-27
+# Date: 14-JUNE-2025
 # LeetCode: https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/
 # Approach:
 #   - Convert input number to string to identify:
