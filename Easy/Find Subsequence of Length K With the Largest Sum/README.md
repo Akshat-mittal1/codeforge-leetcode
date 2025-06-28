@@ -1,6 +1,6 @@
 # Maximum Subsequence
 
-**Date**: 2025-06-27  
+**Date**: 27-JUNE-2025
 **Link**: [LeetCode - Maximum Subsequence](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/)  
 **Category**: Arrays, Greedy, Sorting
 
