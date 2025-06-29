@@ -1,5 +1,5 @@
 # 2311. Longest Binary Subsequence Less Than or Equal to K
-# Date: 2025-06-29
+# Date: 26-JUNE-2025
 # Link: https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/
 
 """
