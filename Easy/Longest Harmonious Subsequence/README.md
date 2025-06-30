@@ -1,6 +1,6 @@
 ```markdown
 # Longest Harmonious Subsequence
-**Date**: 2025-06-30  
+**Date**: 30-JUNE-2025
 **Link**: [LeetCode Problem](https://leetcode.com/problems/longest-harmonious-subsequence/)  
 **Category**: Array, HashMap, Two Pointers
 
