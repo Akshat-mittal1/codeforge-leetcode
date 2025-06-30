@@ -1,5 +1,5 @@
 # Title: Longest Harmonious Subsequence
-# Date: 2025-06-30
+# Date: 30-JUNE-2025
 # Link: https://leetcode.com/problems/longest-harmonious-subsequence/
 # Approach: Two Pointers after sorting
 # Time Complexity: O(n log n)
