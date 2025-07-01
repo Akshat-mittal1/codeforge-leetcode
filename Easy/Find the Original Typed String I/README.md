@@ -1,5 +1,5 @@
 # Count Possible Strings Without Changing Order
-**Date**: 2025-07-01  
+**Date**: 01-JULY-2025
 **Link**: (Your problem link or custom URL)  
 **Category**: String Processing
 
