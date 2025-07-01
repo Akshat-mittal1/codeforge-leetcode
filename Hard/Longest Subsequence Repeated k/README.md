@@ -1,5 +1,5 @@
 # Longest Subsequence Repeated K Times
-**Date**: 2025-07-01  
+**Date**: 27-JUNE-2025
 **Link**: [LeetCode Problem](https://leetcode.com/problems/longest-subsequence-repeated-k-times/)  
 **Category**: Greedy, BFS, Subsequence
 
