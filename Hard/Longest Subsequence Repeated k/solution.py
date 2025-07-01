@@ -1,5 +1,5 @@
 # Problem Title: Longest Subsequence Repeated K Times
-# Date: 2025-07-01
+# Date: 27-JUNE-2025
 # Problem Link: https://leetcode.com/problems/longest-subsequence-repeated-k-times/
 # Approach: BFS + Greedy + Subsequence Validation
 # Time Complexity: Exponential (due to BFS, worst case O(26^len))
