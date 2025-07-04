@@ -1,3 +1,11 @@
+# 🔹 Problem Title: K-th Character in Generated String
+# 🔹 LeetCode Style: Custom Game-Based String Expansion
+# 🔹 Date: 03-JULY-2025
+# 🔹 Approach: Reverse Simulation with Operation Tracing
+# 🔹 Time Complexity: O(n)
+# 🔹 Space Complexity: O(n)
+# 🔹 Author: Akshat Mittal
+
 import string
 
 class Solution(object):
