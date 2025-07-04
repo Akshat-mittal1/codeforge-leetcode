@@ -1,6 +1,6 @@
 # 🔹 Possible String Count After K Repetitions
 
-**Date:** 2025-07-03  
+**Date:** 02-JULY-2025  
 **Author:** Akshat Mittal  
 **Category:** Dynamic Programming, Bitmasking, Combinatorics
 
