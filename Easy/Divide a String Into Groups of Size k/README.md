@@ -25,11 +25,11 @@ Return a list of string groups.
 
 ## 🔢 Formula
 
-```
+
 padding = k - (len(s) % k)
 if padding != k:
     add last group with fill * padding
-```
+
 
 ---
 
