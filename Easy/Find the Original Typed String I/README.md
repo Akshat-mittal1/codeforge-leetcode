@@ -34,4 +34,7 @@ If `word[i] == word[i-1]`, then `count += 1`.
 Input: "aabbcc"
 Output: 3
 Explanation: 'aa', 'bb', and 'cc' have repetitions.
+```
+```
 Author: Akshat Mittal
+```
