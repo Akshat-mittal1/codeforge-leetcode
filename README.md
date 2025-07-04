@@ -16,4 +16,4 @@ Each problem is more than just a solution — it's a battle of logic, a chance t
 - 💻 Language: Python
 - 🚀 Goal: Master Data Structures & Algorithms
 
-## 🔗 My LeetCode: [leetcode.com/your-AkshatMittal](https://leetcode.com/u/akshatmittal798/)
+## 🔗 My LeetCode: [leetcode.com/AkshatMittal](https://leetcode.com/u/akshatmittal798/)
