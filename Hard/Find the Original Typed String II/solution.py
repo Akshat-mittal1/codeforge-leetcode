@@ -1,6 +1,6 @@
 # 🔹 Problem Title: Possible String Count After K Repetitions
 # 🔹 Approach: Grouping + DP + Modulo Arithmetic
-# 🔹 Date: 2025-07-03
+# 🔹 Date: 02-JULY-20252
 # 🔹 Time Complexity: O(n * k), where n = len(groups)
 # 🔹 Space Complexity: O(k)
 # 🔹 Author: Akshat Mittal
