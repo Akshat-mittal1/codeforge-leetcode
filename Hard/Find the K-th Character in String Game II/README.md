@@ -1,6 +1,6 @@
 # 🔹 K-th Character in Generated String
 
-**Date:** 2025-07-03  
+**Date:** 03-JULY-2025
 **Category:** Bitmasking / Simulation  
 **Author:** Akshat Mittal
 
