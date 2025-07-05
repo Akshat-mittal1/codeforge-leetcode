@@ -1,21 +1,3 @@
-# 🔍 Problem: Count Good Arrays
-# 📅 Date: 17-JUNE-2025
-# ❓ Description:
-#   Given integers n, m, and k, count the number of arrays of length `n` using integers from `1` to `m`
-#   such that exactly `k` indices have values that are *greater than the previous index*.
-#   This is a classic combination + power-based counting problem.
-#
-# 🧠 Approach:
-#   - Choose `k` positions (out of `n-1`) to place the increases: C(n - 1, k)
-#   - First element can be any of `m` values
-#   - Each increasing position must be strictly greater → choices = (m-1)
-#   - So total ways = C(n - 1, k) * m * (m - 1)^(n - k - 1)
-#
-# ⏱️ Time Complexity: O(n)
-# 🧠 Space Complexity: O(n)
-# ✅ Preprocessing for factorials and inverse factorials (modular inverse)
-# 🔗 Problem Link: (You can fill in the actual link if it's from a contest or LeetCode)
-
 MOD = 10 ** 9 + 7
 N = 10 ** 5 + 4
 
