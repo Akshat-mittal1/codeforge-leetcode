@@ -1,13 +1,15 @@
-```markdown
-# 🔍 Problem: Count Good Arrays
+# 🔍 LeetCode [Custom] – Count Good Arrays
 
-📅 Date: 17-JUNE-2025
-🔗 Link: *(insert platform link if available)*  
-🗂️ Category: Combinatorics, Modular Arithmetic, Exponentiation
+| Item            | Value                                                                                  |
+|-----------------|----------------------------------------------------------------------------------------|
+| **Solved on**   | 17‑JUNE‑2025                                                                           |
+| **Category**    | Hard                                                                                   |
+| **Topic Tags**  | Combinatorics, Modular Arithmetic, Exponentiation                                     |
+| **Problem Link**| _Custom problem – no public link available_                                           |
 
 ---
 
-## 📝 Problem Statement
+## 📄 Problem Statement
 
 You are given three integers: `n`, `m`, and `k`.
 
@@ -17,49 +19,38 @@ Return the count modulo **10^9 + 7**.
 
 ---
 
-## ✅ Approach
+## 🧠 Approach
 
 1. You choose `k` positions out of `n-1` where increases occur → **C(n - 1, k)**
 2. The first element can be any number from `1` to `m` → **m**
-3. For each increasing step, the next number must be greater than the previous, so choices = `m - 1`
+3. For each increasing step, the next number must be greater than the previous, so choices = `m - 1`  
    → `bigpow(m - 1, n - k - 1)`
 
 ---
 
-## 🔢 Formula
+## ⏱️ Time & Space Complexity
 
-```
-C(n - 1, k) * m * (m - 1)^(n - k - 1) % MOD
-```
-
-- `C(n, k)` is computed using precomputed factorials and modular inverse
+- **Time Complexity:** O(N) preprocessing, O(1) per query  
+- **Space Complexity:** O(N) for factorial arrays
 
 ---
 
-## ⏱️ Time and Space Complexity
+## ✅ Example
 
-- **Time**: O(N) preprocessing, O(1) per query
-- **Space**: O(N) for factorial arrays
-
----
-
-## 🧪 Example
-
-### Input:
 ```python
+Input:
 n = 5
 m = 3
 k = 2
+
+Steps:
+- C(4, 2) = 6
+- m = 3
+- (m - 1)^(n - k - 1) = 2^2 = 4
+
+Result: 6 * 3 * 4 = 72
+
+Output: 72
 ```
 
-### Output:
-```python
-72
-```
-
----
-
-## 👨‍💻 Author
-
-Akshat Mittal
-```
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
