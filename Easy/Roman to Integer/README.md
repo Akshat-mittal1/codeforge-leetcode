@@ -46,3 +46,5 @@ XC = 90
 IV = 4  
 
 Total = 1000 + 900 + 90 + 4 = 1994
+```
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
