@@ -1,52 +1,51 @@
-# 🧮 Median of Two Sorted Arrays
+# 🔍 LeetCode 4 – Median of Two Sorted Arrays
 
-- 📅 Date: 24-JUNE-2025  
-- 🔗 [Leetcode Problem Link](https://leetcode.com/problems/median-of-two-sorted-arrays/)  
-- 🗂️ Category: Array, Binary Search (optimized), Sorting
+| Item            | Value                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------------|
+| **Solved on**   | 24‑JUNE‑2025                                                                                    |
+| **Category**    | Hard                                                                                            |
+| **Topic Tags**  | Array, Binary Search (Optimized), Sorting                                                      |
+| **Problem Link**| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)      |
 
 ---
 
-### 📘 Problem Statement:
+## 📄 Problem Statement
+
 Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return **the median** of the two sorted arrays.
 
 The optimal requirement is **O(log (m+n))**, but this solution uses a simple **merge + sort** method.
 
 ---
 
-### 💡 Approach:
+## 🧠 Approach
 
 - Concatenate both arrays: `new = nums1 + nums2`
-- Sort the array
-- If length is even: return average of middle two
-- If length is odd: return the middle element
+- Sort the combined array.
+- If total length is odd → return middle element.
+- If even → return the average of the two middle elements.
 
 ---
 
-### 🧮 Formula:
-- `l = len(new)`
-- If `l` is odd → `median = new[l // 2]`
-- If `l` is even → `median = (new[l//2] + new[(l//2)-1]) / 2.0`
+## ⏱️ Time & Space Complexity
+
+- **Time Complexity:** O((m + n) log(m + n))  
+- **Space Complexity:** O(m + n)
 
 ---
 
-### ⏱️ Time & Space Complexity:
-
-| Type | Complexity |
-|------|------------|
-| 🕒 Time | O((m+n) log(m+n)) |
-| 💾 Space | O(m+n) |
-
----
-
-### 🧪 Example:
+## ✅ Example
 
 ```python
 Input:
-    nums1 = [1, 3]
-    nums2 = [2]
+nums1 = [1, 3]
+nums2 = [2]
+
 Steps:
-    new = [1, 3] + [2] → [1, 3, 2]
-    Sorted = [1, 2, 3]
-    Median = 2.0 (middle element)
+- Combine: [1, 3] + [2] → [1, 3, 2]
+- Sorted: [1, 2, 3]
+- Median: 2.0 (middle element)
 
 Output: 2.0
+```
+
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
