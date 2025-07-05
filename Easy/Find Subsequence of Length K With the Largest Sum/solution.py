@@ -1,15 +1,3 @@
-# Title: Maximum Subsequence
-# Date: 27-JUNE-2025
-# LeetCode: https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/
-# Approach: 
-#   - Create an auxiliary array with each element’s index and value.
-#   - Sort the array by value (descending), pick top k.
-#   - Then sort by index (ascending) to maintain original order in the subsequence.
-#   - Extract values only.
-# Time Complexity: O(n log n)
-# Space Complexity: O(n)
-
-
 class Solution(object):
     def maxSubsequence(self, nums, k):
         n = len(nums)
