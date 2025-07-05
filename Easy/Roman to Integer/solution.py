@@ -1,18 +1,3 @@
-# Problem: Roman to Integer
-# Link: https://leetcode.com/problems/roman-to-integer/
-# Category: Easy
-# Date Solved: 18-JUNE-2025
-
-"""
-Approach:
-- Traverse each character of the Roman numeral.
-- For subtractive cases (like IV, IX, etc.), check next character and subtract.
-- Else, add the normal value of the current Roman symbol.
-
-Time Complexity: O(n)
-Space Complexity: O(1)
-"""
-
 class Solution(object):
     def romanToInt(self, s):
         """
