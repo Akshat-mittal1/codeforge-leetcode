@@ -50,4 +50,4 @@ Steps:
 
 Output: [0, 1]
 ```
-👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
