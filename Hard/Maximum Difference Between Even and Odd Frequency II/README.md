@@ -1,56 +1,57 @@
-# Maximum Difference Between Counts of Two Digits in a Sliding Window
+# 🔍 LeetCode 3445 – Maximum Difference Between Even and Odd Frequency II
 
-**Date:** 11-JUNE-2025
-**Category:** Sliding Window, Prefix Sum, Digit Frequency
+| Item            | Value                                                                                                        |
+|-----------------|--------------------------------------------------------------------------------------------------------------|
+| **Solved on**   | 11‑JUNE‑2025                                                                                                 |
+| **Category**    | Medium                                                                                                       |
+| **Topic Tags**  | Sliding Window, Prefix Sum, Digit Frequency                                                                  |
+| **Problem Link**| [Maximum Difference Between Even and Odd Frequency II](https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/) |
 
 ---
 
-### 🧠 Problem Statement:
+## 📄 Problem Statement
+
 You are given a string `sequence` consisting of digits from **0 to 4**, and an integer `window_size`.  
 Your task is to find the **maximum possible value of**:
 
 count(a) - count(b)
 
-yaml
-Copy
-Edit
-
-where `a ≠ b`, and both digits appear at least once in the window of size `window_size`.
+Where:
+- `a ≠ b`
+- Both digits must appear **at least once** in the window of size `window_size`.
 
 ---
 
-### 💡 Approach:
+## 🧠 Approach
 
-1. For every possible pair of digits `(a, b)` where `a ≠ b`:
-   - Traverse the string using a **sliding window**.
-   - Track the cumulative counts of both digits using a **prefix sum array**.
-   - Use a **custom `get(x, y)` function** to handle parity and optimize `min_diff` tracking.
-2. Update the result only when both `a` and `b` have been encountered within the window.
-
----
-
-### ⚙️ Core Logic:
-- Uses `((x % 2) << 1) | (y % 2)` to map count parities into 4 categories for efficient lookup.
-- Maintains a `min_diff` array of size 4 to minimize space and maximize reuse.
+1. Iterate over all 25 digit pairs `(a, b)` where `a ≠ b`.
+2. For each pair:
+   - Use a sliding window of length `window_size`.
+   - Use prefix sums and parity optimization to track the frequency difference of the two digits.
+   - Map parities using: `((x % 2) << 1) | (y % 2)` to minimize storage.
+3. Track maximum difference only when both digits are present in the window.
 
 ---
 
-### 🧪 Test Case:
+## ⏱️ Time & Space Complexity
+
+- **Time Complexity:** O(25 × n)  
+- **Space Complexity:** O(n)
+
+---
+
+## ✅ Example
 
 ```python
 Input:
-    sequence = "120201201"
-    window_size = 5
+sequence = "120201201"
+window_size = 5
 
-Output:
-    (Expected output varies — example: 2 or 3 depending on digit frequencies)
-⏱️ Time & Space Complexity:
-Metric	Value
-Time	O(25 × n)
-Space	O(n)
-Explanation	25 digit pairs (0–4), each full pass over sequence
+Possible Window: "20120"
+→ count(2) = 2, count(0) = 1 → diff = 1
+→ count(1) = 1, count(2) = 2 → diff = 1
 
-📌 Notes:
-Skips pairs where a == b or if either digit doesn’t appear.
+Output: 2
+```
 
-Efficient for long sequences due to bounded digit range and parity-based optimization.
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
