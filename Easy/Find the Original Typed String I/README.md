@@ -48,6 +48,4 @@ Output: 4
 
 ```
 
-## ---
-
-👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
+##  👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
