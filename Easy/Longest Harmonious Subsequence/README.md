@@ -43,6 +43,4 @@ Steps:
 Output: 5
 ```
 
-## ---
-
-👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
+##  👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
