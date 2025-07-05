@@ -1,9 +1,3 @@
-# 🔍 Problem: K-Mirror Numbers
-# 📅 Date: 23-JUNE-2025
-# 🔗 Link: https://leetcode.com/problems/k-mirror-numbers/
-# ✅ Category: Math, Palindromes, Base Conversion
-# 👨‍💻 Author: Akshat Mittal
-
 class Solution:
     def createPalindrome(self, num: int, odd: bool) -> int:
         x = num
