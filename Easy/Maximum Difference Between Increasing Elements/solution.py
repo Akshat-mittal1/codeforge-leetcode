@@ -1,10 +1,3 @@
-# 🔍 Problem: Maximum Difference Between Increasing Elements
-# 📅 Date: 16-JUNE-2025
-# 🔗 Link: https://leetcode.com/problems/maximum-difference-between-increasing-elements/
-# ✅ Approach: Track Minimum Value and Compare Difference
-# ⏱️ Time Complexity: O(n)
-# 🛢️ Space Complexity: O(1)
-
 class Solution(object):
     def maximumDifference(self, nums):
         """
