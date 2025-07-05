@@ -1,13 +1,15 @@
-```markdown
-# 🔍 Divide String Into Groups of Size K
+# 🔍 LeetCode 2138 – Divide a String Into Groups of Size K
 
-- 📅 Date: 22-JUNE-2025
-- 🔗 [LeetCode Link](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/)  
-- 🧠 Category: String, Greedy, Simulation
+| Item            | Value                                                                                          |
+|-----------------|------------------------------------------------------------------------------------------------|
+| **Solved on**   | 22‑JUNE‑2025                                                                                   |
+| **Category**    | Easy                                                                                           |
+| **Topic Tags**  | String, Greedy, Simulation                                                                     |
+| **Problem Link**| [Divide a String Into Groups of Size K](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/) |
 
 ---
 
-## 🧾 Problem Statement
+## 📄 Problem Statement
 
 Given a string `s`, divide it into groups of size `k`. The last group may be shorter than `k` characters. If so, fill it with the given `fill` character until its length is `k`.
 
@@ -15,7 +17,7 @@ Return a list of string groups.
 
 ---
 
-## ✅ Approach
+## 🧠 Approach
 
 - Calculate how many characters are needed to make `s`'s length a multiple of `k`.
 - Traverse `s` in steps of `k` and collect substrings.
@@ -23,32 +25,24 @@ Return a list of string groups.
 
 ---
 
-## 🔢 Formula
-
-
-padding = k - (len(s) % k)
-if padding != k:
-    add last group with fill * padding
-
-
----
-
 ## ⏱️ Time & Space Complexity
 
-- **Time:** O(n)
-- **Space:** O(n)
+- **Time Complexity:** O(n)  
+- **Space Complexity:** O(n)
 
 ---
 
-## 🧪 Example
+## ✅ Example
 
-**Input:**  
-s = "abcdefghi", k = 3, fill = "x"  
+```python
+Input:
+s = "abcdefghi", k = 3, fill = "x"
 
-**Output:**  
-["abc", "def", "ghi"]
+Steps:
+- Groups: "abc", "def", "ghi"
+- No padding needed
 
----
-
-**👨‍💻 Author:** Akshat Mittal
+Output: ["abc", "def", "ghi"]
 ```
+
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
