@@ -1,11 +1,11 @@
 # 🔍 LeetCode 9 – Palindrome Number
 
-| Item | Value |
-|------|-------|
-| **Solved on** | 20‑12‑2024 |
-| **Category** | Easy |
-| **Topic Tags** | Math, String |
-| **Problem Link** | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) |
+| Item            | Value                                                   |
+|-----------------|---------------------------------------------------------|
+| **Solved on**   | 20‑DECEMBER‑2024                                        |
+| **Category**    | Easy                                                    |
+| **Topic Tags**  | Math, String                                            |
+| **Problem Link**| [Palindrome Number](https://leetcode.com/problems/palindrome-number/) |
 
 ---
 
@@ -27,6 +27,13 @@ But `-121`, `10`, `123` are not.
 
 ---
 
+## ⏱️ Time & Space Complexity
+
+- **Time Complexity:** O(n), where *n* is the number of digits in the integer  
+- **Space Complexity:** O(n) due to string conversion
+
+---
+
 ## ✅ Example
 
 ```python
@@ -34,3 +41,5 @@ Input: 121
 Reversed: "121"
 Match: Yes
 Output: True
+``` 
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
