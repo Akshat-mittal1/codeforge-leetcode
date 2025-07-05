@@ -1,11 +1,3 @@
-# 🔹 Problem Title: K-th Character in Generated String
-# 🔹 LeetCode Style: Custom Game-Based String Expansion
-# 🔹 Date: 03-JULY-2025
-# 🔹 Approach: Reverse Simulation with Operation Tracing
-# 🔹 Time Complexity: O(n)
-# 🔹 Space Complexity: O(n)
-# 🔹 Author: Akshat Mittal
-
 import string
 
 class Solution(object):
@@ -35,6 +27,4 @@ print(sol.kthCharacter(1, [1, 0, 1]))  # Expected: 'a'
 # Test 3
 print(sol.kthCharacter(8, [1, 1, 1]))  # Expected: 'd'
 
-# Test 4
-print(sol.kthCharacter(100000000000000, [1]*50 + [0]*50))  # Expected: should run without error
 
