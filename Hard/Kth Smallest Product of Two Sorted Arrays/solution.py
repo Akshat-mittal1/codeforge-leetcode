@@ -1,11 +1,3 @@
-# Title: K-th Smallest Product of Two Sorted Arrays
-# Date: 25-JUNE-2025
-# Link: https://leetcode.com/problems/k-th-smallest-product-of-two-sorted-arrays/
-# Approach: Binary Search on Answer
-# Time Complexity: O((m + n) * log(range))
-# Space Complexity: O(1)
-# Test Case: nums1 = [-4, -2, 0, 3], nums2 = [1, 2], k = 6
-
 from bisect import bisect_right, bisect_left
 
 class Solution:
