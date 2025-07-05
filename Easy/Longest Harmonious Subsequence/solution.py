@@ -1,11 +1,3 @@
-# Title: Longest Harmonious Subsequence
-# Date: 30-JUNE-2025
-# Link: https://leetcode.com/problems/longest-harmonious-subsequence/
-# Approach: Two Pointers after sorting
-# Time Complexity: O(n log n)
-# Space Complexity: O(1)
-# Test Case: [1,3,2,2,5,2,3,7] -> Output: 5
-
 class Solution:
     def findLHS(self, nums):
         nums.sort()
