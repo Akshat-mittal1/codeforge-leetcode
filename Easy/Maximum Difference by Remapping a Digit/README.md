@@ -47,6 +47,4 @@ Max version: 99899
 Min version: 11001
 Output: 99899 - 11001 = 88898
 ```
-## ---
-
-👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
+##  👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
