@@ -1,11 +1,3 @@
-# Problem Title: Longest Subsequence Repeated K Times
-# Date: 27-JUNE-2025
-# Problem Link: https://leetcode.com/problems/longest-subsequence-repeated-k-times/
-# Approach: BFS + Greedy + Subsequence Validation
-# Time Complexity: Exponential (due to BFS, worst case O(26^len))
-# Space Complexity: O(n) for queue and result storage
-# Test Case Included
-
 from collections import Counter
 
 class Solution(object):
