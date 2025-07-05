@@ -1,11 +1,11 @@
 # 🔍 LeetCode 1 – Two Sum
 
-| Item | Value |
-|------|-------|
-| **Solved on** | 20‑12‑2024 |
-| **Category** | Easy |
-| **Topic Tags** | Hash Map, Array |
-| **Problem Link** | [Two Sum](https://leetcode.com/problems/two-sum/) |
+| Item            | Value                                            |
+|-----------------|--------------------------------------------------|
+| **Solved on**   | 20‑DECEMBER‑2024                                 |
+| **Category**    | Easy                                             |
+| **Topic Tags**  | Hash Map, Array                                  |
+| **Problem Link**| [Two Sum](https://leetcode.com/problems/two-sum/) |
 
 ---
 
@@ -32,6 +32,13 @@ Return the answer in **any order**.
 
 ---
 
+## ⏱️ Time & Space Complexity
+
+- **Time Complexity:** O(n), where *n* is the length of the array  
+- **Space Complexity:** O(n) for the hash map
+
+---
+
 ## ✅ Example
 
 ```python
@@ -42,3 +49,5 @@ Steps:
 - i = 1 → num = 7 → find = 2 → found in dict at index 0
 
 Output: [0, 1]
+```
+👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
