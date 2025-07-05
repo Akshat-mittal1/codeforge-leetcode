@@ -1,18 +1,3 @@
-# 🔍 Problem: Palindrome Number
-# 📍 Link: https://leetcode.com/problems/palindrome-number/
-# 📂 Category: Easy
-# 📅 Date Solved: 20-DEC-2024
-
-"""
-🧠 Approach:
-- Convert the number to a string.
-- Reverse the string.
-- Compare with the original.
-
-⏱️ Time Complexity: O(n)
-📦 Space Complexity: O(n)
-"""
-
 class Solution(object):
     def isPalindrome(self, x):
         x = str(x)
