@@ -1,10 +1,3 @@
-# Title: Maximum Difference Between Counts of Two Digits in a Sliding Window
-# Date: 11-JUNE-2025
-# Approach: Prefix sum tracking, custom encoding of parity, sliding window optimization
-# Time Complexity: O(25 * n), where 25 is for digit pairs (0–4) and n is length of sequence
-# Space Complexity: O(n)
-# Test Case: sequence = "120201201", window_size = 5
-
 class Solution(object):
     def get(self, x, y):
         return ((x % 2) << 1) | (y % 2)
