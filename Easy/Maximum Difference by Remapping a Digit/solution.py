@@ -1,16 +1,3 @@
-# Title: Maximum Difference by Remapping a Digit
-# Date: 14-JUNE-2025
-# LeetCode: https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/
-# Approach:
-#   - Convert input number to string to identify:
-#     • For max: replace the first non-9 digit with 9
-#     • For min: replace the first digit with 0
-#   - Reconstruct max and min by replacing digit-wise
-# Time Complexity: O(d) where d = number of digits
-# Space Complexity: O(1)
-# Dry Run:
-#   num = 11891 → max = 99899, min = 11001 → result = 99899 - 11001 = 88898
-
 class Solution(object):
     def minMaxDifference(self, num):
         """
