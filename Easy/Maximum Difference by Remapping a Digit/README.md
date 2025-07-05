@@ -1,12 +1,15 @@
-# Maximum Difference by Remapping a Digit
+# 🔍 LeetCode 2566 – Maximum Difference by Remapping a Digit
 
-**Date**: 14-JUNE-2025
-**Link**: [LeetCode - Maximum Difference by Remapping a Digit](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/)  
-**Category**: Greedy, Math, String
+| Item            | Value                                                                                  |
+|-----------------|----------------------------------------------------------------------------------------|
+| **Solved on**   | 14‑JUNE‑2025                                                                           |
+| **Category**    | Medium                                                                                 |
+| **Topic Tags**  | Greedy, Math, String                                                                   |
+| **Problem Link**| [Maximum Difference by Remapping a Digit](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/) |
 
 ---
 
-## 🧩 Problem Statement
+## 📄 Problem Statement
 
 You are given an integer `num`. You must choose a digit and **replace all occurrences** of it in the number with **another digit** (0–9) such that:
 
@@ -17,7 +20,7 @@ Return the **difference** between max and min you can get.
 
 ---
 
-## 🚀 Approach
+## 🧠 Approach
 
 1. Convert the number to a string.
 2. For maximum:
@@ -31,16 +34,19 @@ Return the **difference** between max and min you can get.
 
 ## ⏱️ Time & Space Complexity
 
-- **Time**: O(d), where `d = number of digits in num`
-- **Space**: O(1)
+- **Time Complexity:** O(d), where *d* is the number of digits in `num`  
+- **Space Complexity:** O(1)
 
 ---
 
-## 💡 Example
+## ✅ Example
 
 ```python
 Input: num = 11891
 Max version: 99899
 Min version: 11001
 Output: 99899 - 11001 = 88898
+```
+## ---
 
+👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
