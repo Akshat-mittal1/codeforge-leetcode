@@ -1,11 +1,3 @@
-# Problem Title: Count Possible Strings Without Changing Order
-# Date: 01-JULY-2025
-# Problem Link: (Your link here, or custom problem)
-# Approach: Count consecutive characters that are the same, each such repetition adds a possibility.
-# Time Complexity: O(n)
-# Space Complexity: O(1)
-# Test Case Included
-
 class Solution(object):
     def possibleStringCount(self, word):
         """
