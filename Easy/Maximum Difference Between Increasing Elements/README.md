@@ -1,13 +1,15 @@
-```markdown
-# 🔍 Maximum Difference Between Increasing Elements
+# 🔍 LeetCode 2016 – Maximum Difference Between Increasing Elements
 
-- 📅 Date: 16-JUNE-2025  
-- 🔗 [LeetCode Link](https://leetcode.com/problems/maximum-difference-between-increasing-elements/)  
-- 🧠 Category: Array, Greedy
+| Item            | Value                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------------|
+| **Solved on**   | 16‑JUNE‑2025                                                                                    |
+| **Category**    | Easy                                                                                            |
+| **Topic Tags**  | Array, Greedy                                                                                   |
+| **Problem Link**| [Maximum Difference Between Increasing Elements](https://leetcode.com/problems/maximum-difference-between-increasing-elements/) |
 
 ---
 
-## 🧾 Problem Statement
+## 📄 Problem Statement
 
 You are given a 0-indexed integer array `nums` of size `n`. The **maximum difference** between two elements `nums[i]` and `nums[j]` is defined as:
 
@@ -17,7 +19,7 @@ Return the maximum such difference. If no such pair exists, return -1.
 
 ---
 
-## ✅ Approach
+## 🧠 Approach
 
 - Iterate through the array while tracking the minimum element encountered so far.
 - For each element, calculate the difference with the current minimum.
@@ -25,37 +27,25 @@ Return the maximum such difference. If no such pair exists, return -1.
 
 ---
 
-## 🔢 Formula
-
-```
-premin = nums[0]
-for i in range(1, len(nums)):
-    if nums[i] > premin:
-        max_diff = max(max_diff, nums[i] - premin)
-    else:
-        premin = nums[i]
-```
-
----
-
 ## ⏱️ Time & Space Complexity
 
-- **Time Complexity:** O(n)
+- **Time Complexity:** O(n)  
 - **Space Complexity:** O(1)
 
 ---
 
-## 🧪 Example
+## ✅ Example
 
-**Input:**  
-nums = [7, 1, 5, 4]  
+```python
+Input: nums = [7, 1, 5, 4]
 
-**Output:**  
-4  
-(5 - 1 = 4)
+Steps:
+- premin = 7 → update to 1
+- max_diff = max(0, 5 - 1) = 4
 
----
-
-**👨‍💻 Author:** Akshat Mittal
+Output: 4
 ```
 
+## ---
+
+👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
