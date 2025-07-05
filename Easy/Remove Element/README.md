@@ -49,6 +49,4 @@ Output:
 - Modified nums: [2, 2, '_', '_']
 ```
 
-## ---
-
-👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
+##  👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
