@@ -1,11 +1,11 @@
 # 🔍 LeetCode 27 – Remove Element
 
-| Item | Value |
-|------|-------|
-| **Solved on** | 12‑JUNE‑2025 |
-| **Category** | Easy |
-| **Topic Tags** | Array, Two Pointers |
-| **Problem Link** | [Remove Element](https://leetcode.com/problems/remove-element/) |
+| Item            | Value                                                   |
+|-----------------|---------------------------------------------------------|
+| **Solved on**   | 12‑JUNE‑2025                                            |
+| **Category**    | Easy                                                    |
+| **Topic Tags**  | Array, Two Pointers                                     |
+| **Problem Link**| [Remove Element](https://leetcode.com/problems/remove-element/) |
 
 ---
 
@@ -25,7 +25,14 @@ Return the number of elements after removal. The elements in the first `k` posit
 - Return the new length `k = total_length - count(val)`.
 
 > ⚠️ Note: This approach is **not optimal** because `list.remove(val)` is O(n), making the whole logic O(n²).  
-A better approach is the **two-pointer** method (see below in bonus).
+> A better approach is the **two-pointer** method (see below in bonus).
+
+---
+
+## ⏱️ Time & Space Complexity
+
+- **Time Complexity:** O(n²) due to repeated `remove()` calls  
+- **Space Complexity:** O(1) — in-place modification, no extra storage used
 
 ---
 
@@ -40,3 +47,8 @@ Process:
 Output:
 - New length: 2
 - Modified nums: [2, 2, '_', '_']
+```
+
+## ---
+
+👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
