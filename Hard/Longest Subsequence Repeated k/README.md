@@ -1,38 +1,51 @@
-# Longest Subsequence Repeated K Times
-**Date**: 27-JUNE-2025
-**Link**: [LeetCode Problem](https://leetcode.com/problems/longest-subsequence-repeated-k-times/)  
-**Category**: Greedy, BFS, Subsequence
+# 🔍 LeetCode 1980 – Longest Subsequence Repeated K Times
+
+| Item            | Value                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------------|
+| **Solved on**   | 27‑JUNE‑2025                                                                                    |
+| **Category**    | Hard                                                                                            |
+| **Topic Tags**  | Greedy, BFS, Subsequence                                                                        |
+| **Problem Link**| [Longest Subsequence Repeated K Times](https://leetcode.com/problems/longest-subsequence-repeated-k-times/) |
 
 ---
 
-### Problem Statement:
-Given a string `s` and an integer `k`, return the longest subsequence `sub` such that `sub` repeated `k` times is a subsequence of `s`. If multiple answers exist, return the lexicographically largest one.
+## 📄 Problem Statement
+
+Given a string `s` and an integer `k`, return the **longest subsequence** `sub` such that `sub` repeated `k` times is a subsequence of `s`.  
+If multiple answers exist, return the **lexicographically largest** one.
 
 ---
 
-### Approach:
-- Count frequencies of characters and filter those with frequency ≥ k.
-- Use BFS to generate subsequences in increasing length.
-- For each candidate, check if repeating it `k` times is still a subsequence of `s`.
-- Keep updating the result if a longer or lexicographically greater valid subsequence is found.
+## 🧠 Approach
+
+- Count frequency of each character in `s` and keep only those that appear at least `k` times.
+- Use **BFS** to generate all possible subsequences using the valid character set.
+- For each candidate `sub`:
+  - Check whether `sub * k` is a subsequence of `s`.
+  - If yes, update the result if it's longer or lexicographically larger than the previous.
+- Always try larger lexicographic characters first (to favor larger subsequence).
 
 ---
 
-### Key Function:
+## ⏱️ Time & Space Complexity
+
+- **Time Complexity:** Exponential (branching factor per character)
+- **Space Complexity:** O(n) for queue and result storage
+
+---
+
+## ✅ Example
+
 ```python
-def isValid(sub):
-    t = sub * k
-    # Check if t is a subsequence of s
-Time & Space Complexity:
-Time: Exponential (due to branching on character combinations)
+Input:
+s = "letsleetcode"
+k = 2
 
-Space: O(n) for queue and result storage
+Check: Is "let" × 2 = "letlet" a subsequence of s?
 
-Example:
-python
-Copy
-Edit
-Input: s = "letsleetcode", k = 2
+Yes → Valid
+
 Output: "let"
-Explanation: "letlet" is a subsequence of the input string.
-Author: Akshat Mittal
+```
+
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
