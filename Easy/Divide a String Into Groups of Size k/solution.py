@@ -1,10 +1,3 @@
-# 🔍 Problem: Divide String Into Groups of Size K
-# 📅 Date: 22-JUNE-2025
-# 🔗 Link: https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/
-# ✅ Approach: Manual chunking and filling
-# ⏱️ Time Complexity: O(n)
-# 🛢️ Space Complexity: O(n)
-
 class Solution(object):
     def divideString(self, s, k, fill):
         """
