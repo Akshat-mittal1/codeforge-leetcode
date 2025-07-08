@@ -1,19 +1,3 @@
-# 1498. Number of Subsequences That Satisfy the Given Sum Condition
-# Date: 29-JUNE-2025
-# Link: https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
-
-"""
-Approach:
-- Sort the array
-- For each number at index i, treat it as the minimum.
-- Use binary search to find the farthest index j such that nums[i] + nums[j] <= target.
-- The number of valid subsequences from i to j is 2^(j - i).
-- Precompute powers of 2 for efficiency.
-
-Time Complexity: O(n log n) [Sorting + Binary Search per index]
-Space Complexity: O(n) [For power array]
-"""
-
 from bisect import bisect_right
 
 class Solution(object):
