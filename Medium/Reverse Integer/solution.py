@@ -1,14 +1,3 @@
-# 🔍 Problem: Reverse Integer
-# 📅 Date: 24-JUNE-2025
-# 🔗 Link: https://leetcode.com/problems/reverse-integer/
-# ✅ Approach: Digit extraction and reversal
-# ⏱️ Time Complexity: O(log₁₀N)
-# 📦 Space Complexity: O(1)
-# 🧪 Test Case:
-# Input: x = -123
-# Reversed = -321
-# Output: -321
-
 class Solution(object):
     def reverse(self, x):
         """
