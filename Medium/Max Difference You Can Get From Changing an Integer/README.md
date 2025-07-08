@@ -1,7 +1,11 @@
-# 🔍 Leetcode 1432: Max Difference You Can Get From Changing an Integer
-## 📅 Date: 15-JUNE-2025  
-🔗 [Leetcode Problem Link](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/)  
-🧠 **Category**: Greedy, String Manipulation  
+# 🔍 LeetCode 1432 – Max Difference You Can Get From Changing an Integer
+
+| Item            | Value                                                                                                     |
+|-----------------|-----------------------------------------------------------------------------------------------------------|
+| **Solved on**   | 15‑JUNE‑2025                                                                                               |
+| **Category**    | Medium                                                                                                     |
+| **Topic Tags**  | Greedy, String Manipulation                                                                                |
+| **Problem Link**| [Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/) |
 
 ---
 
@@ -17,40 +21,33 @@ Return the **difference between max and min** you can achieve after both operati
 
 ---
 
-## 🧠 Approach: Greedy Replacement
+## 🧠 Approach (Greedy Replacement)
 
-- Convert the number to string.
-- For max:
-  - Replace the **first non-9 digit** with '9'.
-- For min:
-  - If first digit ≠ '1', replace it with '1'.
-  - Else, replace the first non-[0,1] digit after it with '0'.
-
----
-
-### Formula:
-```
-result = max_possible - min_possible
-```
+- Convert the number to a string.
+- For **maximum**:
+  - Replace the **first digit** that is not `'9'` with `'9'`.
+- For **minimum**:
+  - If the first digit is not `'1'`, replace it with `'1'`.
+  - Else, replace the first digit after that which is neither `'0'` nor `'1'` with `'0'`.
 
 ---
 
-## ✅ Time & Space
+## ⏱️ Time & Space Complexity
 
-- ⏱ Time Complexity: O(n)  
-- 💾 Space Complexity: O(n)
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
 
 ---
 
-## 🧪 Example
+## ✅ Example
 
 ```python
 Input: num = 9288
-Output: 8700
+
+Max: Replace '2' → '9' → 9988  
+Min: Replace '9' → '1' → 1288  
+
+Output: 9988 - 1288 = 8700
 ```
 
----
-
-## 🧑‍💻 Author
-
-Leetcode-style greedy implementation by Akshat Mittal.
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
