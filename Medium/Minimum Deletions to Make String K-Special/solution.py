@@ -1,10 +1,3 @@
-# 🔍 Problem: Make String K-Special (Minimum Deletions)
-# 🗕 Date: 21-JUNE-2025
-# 🌐 Link: (Custom problem based on frequency constraints)
-# 🧠 Approach: Sort Frequencies + Try Every Possible Min Freq
-# 🕐 Time Complexity: O(n^2)
-# 📦 Space Complexity: O(n)
-
 from collections import Counter
 
 class Solution:
