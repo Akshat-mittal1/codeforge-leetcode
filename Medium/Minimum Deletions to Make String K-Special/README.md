@@ -1,57 +1,59 @@
-# 🔍 Custom Problem: Make String K-Special (Minimum Deletions)
-## 📅 Date: 21-JUNE-2025  
-🔗 (Custom problem – no official link)  
-🧠 **Category**: Greedy, Frequency Analysis  
+# 🔍 LeetCode 3446 – Minimum Deletions to Make String K-Special
+
+| Item            | Value                                                                                                   |
+|-----------------|---------------------------------------------------------------------------------------------------------|
+| **Solved on**   | 21‑JUNE‑2025                                                                                            |
+| **Category**    | Medium                                                                                                  |
+| **Topic Tags**  | Greedy, Frequency Analysis                                                                              |
+| **Problem Link**| [Minimum Deletions to Make String K-Special](https://leetcode.com/problems/minimum-deletions-to-make-string-k-special) |
 
 ---
 
 ## 📄 Problem Statement
 
-You're given a string `word` and an integer `k`.  
-A string is called **k-special** if for all characters `i` and `j`,  
-```
+You are given a string `word` and an integer `k`.
+
+A string is called **k-special** if for all characters `i` and `j`:
+
+
+
 |freq(i) - freq(j)| <= k
-```
 
 Return the **minimum number of deletions** required to make the string k-special.
 
 ---
 
-## 🧠 Approach: Greedy + Sorted Frequencies
+## 🧠 Approach (Greedy + Sorted Frequencies)
 
-1. Count frequency of each character.
-2. Sort the frequencies.
-3. Try every frequency as the **minimum allowed** frequency:
-   - Delete all characters with lower frequency.
-   - Reduce characters with too high frequency to fit in range `[min_freq, min_freq + k]`.
-4. Return the minimum deletions across all valid configurations.
-
----
-
-### Formula:
-```
-deletions = sum(freqs < min_freq) + sum(extra in freqs > min_freq + k)
-```
+1. Count the frequency of each character in the string.
+2. Sort all the frequencies.
+3. For every possible frequency value as the **base minimum**:
+   - Delete characters that appear less than this value.
+   - Reduce characters that appear more than `base + k` down to `base + k`.
+4. Track the **minimum deletions** required across all valid frequency bases.
 
 ---
 
-## ✅ Time & Space
+## ⏱️ Time & Space Complexity
 
-- ⏱ Time Complexity: O(n²)
-- 💾 Space Complexity: O(n)
+| Type              | Value      |
+|-------------------|------------|
+| Time Complexity   | O(n²)      |
+| Space Complexity  | O(n)       |
 
 ---
 
-## 🧪 Example
+## ✅ Example
 
 ```python
 Input: word = "aabbcccc", k = 1
+
+Frequencies: a:2, b:2, c:4  
+Try base = 2 → reduce c:4 → 3 deletions  
+Try base = 3 → delete a,b: total 4 deletions  
+→ Minimum deletions = 1
+
 Output: 1
 ```
 
----
-
-## 🧑‍💻 Author
-
-Leetcode-style implementation by Akshat Mittal  
-Includes clean greedy logic using frequency band control
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
