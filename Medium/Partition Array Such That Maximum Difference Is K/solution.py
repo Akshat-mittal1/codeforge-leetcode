@@ -1,14 +1,3 @@
-# 🔍 Problem: 2294. Partition Array Such That Maximum Difference Is K
-# 📅 Date Solved: 19-JUNE-2025
-# 🌐 Link: https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/
-
-# 🧠 Approach: Greedy + Sorting
-#     1. Sort the array.
-#     2. Start a new group whenever the current element is farther than k from
-#        the smallest element of the current group.
-# 🕐 Time Complexity: O(n log n)   (due to sort)
-# 📦 Space Complexity: O(1)        (in‑place sort)
-
 class Solution(object):
     def partitionArray(self, nums, k):
         """
