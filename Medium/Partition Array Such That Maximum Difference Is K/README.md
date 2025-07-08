@@ -1,58 +1,58 @@
-# 🔍 LeetCode 2294 – Partition Array Such That Maximum Difference Is K
+# 🔍 LeetCode 2294 – Partition Array Such That Maximum Difference Is K
 
-| Item | Value |
-|------|-------|
-| **Solved on** | 19‑06‑2025 |
-| **Category** | Greedy / Sorting |
-| **Difficulty** | Medium |
-| **Link** | <https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/> |
-
----
-
-## 📝 Problem Statement (abridged)
-
-Given an integer array `nums` and an integer `k`, split `nums` into the minimum number<br>
-of non‑empty **groups** such that the **difference between the maximum and minimum element** in each group is **≤ k**.  
-Return that minimum number of groups.
+| Item            | Value                                                                                                 |
+|-----------------|-------------------------------------------------------------------------------------------------------|
+| **Solved on**   | 19‑06‑2025                                                                                            |
+| **Category**    | Medium                                                                                                |
+| **Topic Tags**  | Greedy, Sorting                                                                                       |
+| **Problem Link**| [Partition Array Such That Maximum Difference Is K](https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/) |
 
 ---
 
-## 🧠 Approach
+## 📄 Problem Statement
 
-1. **Sort** `nums` (ascending).  
-2. **Greedy sweep**:  
-   - Keep track of the **smallest element** of the current group (`min_val`).  
-   - For every next element `num`:  
-     - If `num − min_val > k`, start a **new group** (`count += 1`) and reset `min_val = num`.  
-     - Else, keep the element in the current group.  
-3. The variable `count` is the answer.
+Given an integer array `nums` and an integer `k`,  
+split `nums` into the **minimum number of non-empty groups**  
+such that the **difference between the maximum and minimum** element in each group is **at most `k`**.
 
-### Why it works
-
-Sorting places close numbers together. Once an element is more than `k` away from the group's minimum, **no later element (>= num)** can fit in that group either, so greedily starting a new group is optimal.
+Return the **minimum number of groups** needed.
 
 ---
 
-## ⏱️ Complexity
+## 🧠 Approach (Greedy + Sort)
 
-| Type | Complexity |
-|------|------------|
-| **Time** | `O(n log n)` (sorting) |
-| **Space** | `O(1)` (in‑place sort) |
+1. **Sort** the array.
+2. Start with the first element as the **min of the current group**.
+3. Traverse the array:
+   - If `num - min_val > k`, start a **new group**.
+   - Else, continue in the current group.
+4. Increment group count every time a new group starts.
+
+### ✅ Why it works:
+- After sorting, all close numbers are adjacent.
+- Once `num - min_val > k`, no future number can join the current group — so we **greedily start a new one**.
 
 ---
 
-## 💡 Example
+## ⏱️ Time & Space Complexity
 
-```text
-nums = [3, 6, 1, 2, 5], k = 2
-Sorted → [1, 2, 3, 5, 6]
+| Type              | Value        |
+|-------------------|--------------|
+| Time Complexity   | O(n log n)   |
+| Space Complexity  | O(1)         |
 
-Group 1: [1, 2, 3]   (max − min = 3 − 1 = 2 ≤ k)
-Group 2: [5, 6]      (6 − 5 = 1 ≤ k)
+---
 
-Answer = 2 groups
+## ✅ Example
+
+```python
+Input: nums = [3, 6, 1, 2, 5], k = 2
+Sorted: [1, 2, 3, 5, 6]
+
+Group 1: [1, 2, 3] → max - min = 2
+Group 2: [5, 6] → max - min = 1
+
+Output: 2
 ```
 
 ## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
-
