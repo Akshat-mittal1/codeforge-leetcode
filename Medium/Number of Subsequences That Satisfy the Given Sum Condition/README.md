@@ -1,69 +1,58 @@
-# 1498. Number of Subsequences That Satisfy the Given Sum Condition
+# 🔍 LeetCode 1498 – Number of Subsequences That Satisfy the Given Sum Condition
 
-**Date**: 29-JUNE-2025  
-**Link**: [Leetcode Problem](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition)  
-**Category**: Array, Two Pointers, Binary Search, Sorting
-
----
-
-## 🧠 Problem Statement
-
-You are given an array of integers `nums` and an integer `target`.  
-Return the number of non-empty **subsequences** such that the **sum of the minimum and maximum** element in it is less than or equal to `target`.  
-Return the answer modulo **10⁹ + 7**.
+| Item            | Value                                                                                                                    |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------|
+| **Solved on**   | 29‑JUNE‑2025                                                                                                              |
+| **Category**    | Medium                                                                                                                   |
+| **Topic Tags**  | Array, Two Pointers, Binary Search, Sorting                                                                             |
+| **Problem Link**| [Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition) |
 
 ---
 
-## 🔍 Approach
+## 📄 Problem Statement
 
-1. **Sort the array**.
-2. For each index `i`, treat `nums[i]` as the minimum.
-3. Use **binary search** to find the **maximum index j** such that:
+You are given an array of integers `nums` and an integer `target`.
+
+Return the number of non-empty **subsequences** such that the **sum of the minimum and maximum** element in the subsequence is less than or equal to `target`.  
+Return the result modulo **10⁹ + 7**.
+
+---
+
+## 🧠 Approach
+
+1. **Sort** the array.
+2. Iterate each index `i` as the minimum element.
+3. Use **binary search** to find the rightmost index `j` such that:
    - `nums[i] + nums[j] <= target`
-4. All elements from `i` to `j` can form subsequences — count is:
-   - `2^(j - i)`
-5. Use a precomputed powers-of-2 list to optimize performance.
+4. All elements from `i` to `j` can form valid subsequences.
+5. The number of such subsequences is `2^(j - i)`.
+
+To avoid TLE:
+- Precompute powers of 2 modulo `10⁹ + 7` for all indices.
 
 ---
 
-## 🧮 Formula
+## ⏱️ Time & Space Complexity
 
-If:
-- `nums[i]` is the minimum
-- `j` is the last index where `nums[i] + nums[j] <= target`
-
-Then:
-Valid subsequences = 2^(j - i)
-
-yaml
-Copy
-Edit
+| Type              | Value       |
+|-------------------|-------------|
+| Time Complexity   | O(n log n)  |
+| Space Complexity  | O(n)        |
 
 ---
 
-## ⏱ Time & Space Complexity
+## ✅ Example
 
-| Metric           | Complexity |
-|------------------|------------|
-| Time Complexity  | O(n log n) |
-| Space Complexity | O(n)       |
+```python
+Input: nums = [3, 5, 6, 7], target = 9
 
----
-
-## 🔍 Example
-
-**Input**:  
-`nums = [3,5,6,7], target = 9`  
-**Output**: `4`
-
-**Valid Subsequences**:
+Valid Subsequences:
 - [3]
 - [3,5]
 - [3,6]
 - [3,5,6]
 
----
+Output: 4
+```
 
-## 👨‍💻 Solved By
-
-**Akshat Mittal**
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
