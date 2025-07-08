@@ -1,10 +1,3 @@
-# 🔍 Problem: Maximum Difference by Changing a Digit
-# 📅 Date: 15-JUNE-2025
-# 🌐 Link: https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/
-# 🧠 Approach: Greedy - Replace first non-9 with 9 (max), and digit for min with 1 or 0 accordingly
-# 🕐 Time Complexity: O(n) where n is number of digits
-# 📦 Space Complexity: O(n) due to string operations
-
 class Solution(object):
     def maxDiff(self, num):
         """
