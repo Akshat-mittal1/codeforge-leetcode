@@ -52,3 +52,7 @@ Group 1: [1, 2, 3]   (max − min = 3 − 1 = 2 ≤ k)
 Group 2: [5, 6]      (6 − 5 = 1 ≤ k)
 
 Answer = 2 groups
+```
+
+## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
+
