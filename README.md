@@ -17,3 +17,5 @@ Each problem is more than just a solution — it's a battle of logic, a chance t
 - 🚀 Goal: Master Data Structures & Algorithms
 
 ## 🔗 My LeetCode: [leetcode.com/AkshatMittal](https://leetcode.com/u/akshatmittal798/)
+
+ > ⭐ **Like the structured solutions in this repo? Drop a star!**  , Let's grow this into the best LeetCode collection together 📘✨
