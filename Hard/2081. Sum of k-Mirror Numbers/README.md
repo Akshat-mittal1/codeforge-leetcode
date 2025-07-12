@@ -1,11 +1,11 @@
-# 🔍 LeetCode – K-Mirror Numbers
+# 🔍 LeetCode 2081 – Sum of k-Mirror Numbers
 
 | Item            | Value                                                                                             |
 |-----------------|---------------------------------------------------------------------------------------------------|
 | **Solved on**   | 23‑JUNE‑2025                                                                                       |
 | **Category**    | Hard                                                                                               |
 | **Topic Tags**  | Math, Palindrome, Base Conversion, Efficient Generation                                            |
-| **Problem Link**| [K-Mirror Numbers](https://leetcode.com/problems/k-mirror-numbers/)                               |
+| **Problem Link**| [LeetCode – Sum of k-Mirror Numbers](https://leetcode.com/problems/k-mirror-numbers/)             |
 
 ---
 
@@ -50,6 +50,7 @@ Palindromes:
 9 → binary: 1001 ✅
 
 Output: 1 + 3 + 5 + 7 + 9 = 25
+
 ```
 
 ## 👨‍💻 Author: [akshat-mittal1](https://github.com/akshat-mittal1)
